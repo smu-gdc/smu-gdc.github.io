@@ -1,6 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
+
+{% include main.html %}
+{% include slideshow.html %}
+{% include aboutus.html %}
+{% include gamejams.html %}
+{% include calendar.html %}
+{% include resources.html %}
+{% include footer.html %}

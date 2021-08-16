@@ -1,0 +1,22 @@
+{
+  "name": "gdc-website",
+  "homepage": "https://github.com/smu-gdc/gdc-website",
+  "authors": [
+    "mplennon617 <mplennon617@gmail.com>"
+  ],
+  "description": "SMU Game Development Club",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "particles.js": "particles-js#^2.0.0",
+    "bootstrap": "^5.1.0",
+    "jquery": "^3.6.0"
+  }
+}
