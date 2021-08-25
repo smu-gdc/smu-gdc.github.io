@@ -41,8 +41,31 @@ h1, h2, p, a {
     color: $text1;
 }
 
+h1 {
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
 body {
     margin: 0 !important;
+}
+
+section {
+    padding: 10vh 20vw 20vh 20vw;
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 5vh;
+    }
 }
 
 // ------------------------------------------------------------------------------
@@ -79,12 +102,68 @@ body {
     .hill3 {
         top: 70vh;
     }
+    
+    h1 {
+        padding-bottom: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .hill1 {
+            top: 60vh;
+        }
+    
+        .hill2 {
+            top: 70vh;
+        }
+    
+        .hill3 {
+            top: 80vh;
+        }
+    }
+
+    button {
+        border-radius: 1rem;
+        padding: 0.5rem 1rem;
+    }
 }
 
 .main-content {
     position: absolute;
+    top: 10vh;
+    z-index: 2;
     width: 100%;
     height: 100%;
+}
+
+#navbar {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+      
+    li {
+      float: left;
+    }
+      
+    li a {
+      font-size: 1.2rem;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+      
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
 }
 
 // ------------------------------------------------------------------------------
@@ -97,9 +176,8 @@ body {
 
 #about-us {
     background: $bg1;
-    width: 100vw;
-    height: 100vh;
     position: relative;
+    margin-top: 0;
     z-index: 2;
 
     img {
@@ -131,13 +209,99 @@ body {
 //                                 GameJams.html
 // ------------------------------------------------------------------------------
 
+#gamejams {
+    background: $bg1;
+    position: relative;
+    z-index: 2;
+
+    img {
+        position: absolute;
+        width: 100vw;
+        z-index: 1;
+    }
+
+    .gamejam-card {
+        display: inline-block;
+        border-style: solid;
+        border-radius: 1rem;
+        border-color: $text1;
+        padding: 1.5rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .gamejam-card {
+            padding: 1.5rem 0;
+        }
+    }
+}
+
 // ------------------------------------------------------------------------------
 //                                 Calendar.html
 // ------------------------------------------------------------------------------
 
+#calendar {
+    background: $bg1;
+    position: relative;
+    z-index: 2;
+
+    img {
+        position: absolute;
+        width: 100vw;
+        z-index: 1;
+    }
+
+    .hill1 {
+        top: 30vh;
+    }
+
+    .hill2 {
+        top: 50vh;
+    }
+
+    .hill3 {
+        top: 70vh;
+    }
+}
+
+.aboutus-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 // ------------------------------------------------------------------------------
 //                                 Resources.html
 // ------------------------------------------------------------------------------
+
+#resources {
+    background: $bg1;
+    position: relative;
+    z-index: 2;
+
+    img {
+        position: absolute;
+        width: 100vw;
+        z-index: 1;
+    }
+
+    .hill1 {
+        top: 30vh;
+    }
+
+    .hill2 {
+        top: 50vh;
+    }
+
+    .hill3 {
+        top: 70vh;
+    }
+}
+
+.aboutus-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
 // ------------------------------------------------------------------------------
 //                                  Footer.html
@@ -145,7 +309,6 @@ body {
 
 #footer {
     background: $bg2;
-    width: 100vw;
     height: 10vh;
     position: relative;
     z-index: 2;

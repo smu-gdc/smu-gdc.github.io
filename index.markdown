@@ -3,7 +3,7 @@ layout: home
 ---
 
 {% include main.html %}
-{% include slideshow.html %}
+<!--{% include slideshow.html %}-->
 {% include aboutus.html %}
 {% include gamejams.html %}
 {% include calendar.html %}
