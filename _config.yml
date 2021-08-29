@@ -27,6 +27,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+itch-io_url:  https://smu-gdc.itch.io/
+discord_url: https://discord.gg/GmMuWXP5VA
+facebook_url:  https://www.facebook.com/SMU-Game-Development-Club-103899398373425/
+twitter_url: https://twitter.com/SmuGame
+instagram_url:  https://www.instagram.com/smu.gdc/
+
 # Build settings
 theme: minima
 plugins:
